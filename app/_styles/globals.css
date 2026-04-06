@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-900: #003366;
+  --color-primary-200: #f5f8fc;
+  --color-primary-100: #1b2631;
+
+  --color-accent-500: #6097cfc4;
+  --color-accent-600: #f5f8fc;
+}
+
+/* Custom diagonal shape */
+.clip-diagonal {
+  clip-path: polygon(40% 0, 100% 0, 100% 60%);
+}
+
+.spinner {
+  margin: 3.2rem auto 1.6rem;
+  width: 40px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 5px solid #6097cfc4;
+  border-right-color: #003366;
+  animation: rotate 1s infinite linear;
+}
+
+.spinner-mini {
+  margin: 0;
+  width: 20px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 2px solid;
+  border-right-color: transparent;
+  animation: rotate 1s infinite linear;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(1turn);
+  }
+}
