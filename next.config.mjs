@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  images: {},
+  output: "export",
+  images: {
+    unoptimized: true, // required for Netlify static export
+  },
 };
 
-export default nextConfig;
+module.exports = nextConfig;

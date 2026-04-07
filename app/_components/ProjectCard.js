@@ -26,7 +26,7 @@ const featuresData = [
   },
   {
     id: "03",
-    link: "projects/eastern",
+    link: "/projects/eastern",
     image: img3,
     title: "Eastern Bypass",
     description: "Residential Building Construction– Eastern Bypass, Kano",
