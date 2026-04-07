@@ -3,10 +3,11 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import img1 from "@/public/Project/R1.png";
-import img2 from "@/public/Project/G1.png";
-import img3 from "@/public/Project/HTR2.png";
-import img4 from "@/public/Project/SUB1.png";
+// Instead of importing from '@/public/...'
+const img1 = "/Project/R1.png";
+const img2 = "/Project/G1.png";
+const img3 = "/Project/HTR2.png";
+const img4 = "/Project/SUB1.png";
 
 const featuresData = [
   {
@@ -63,7 +64,7 @@ export function ProjectCards() {
                 <Image
                   src={item.image}
                   alt={item.title}
-                  width={400}
+                  width={300}
                   height={200}
                   className="w-full h-[200px] object-cover transition-transform duration-500 group-hover:scale-105"
                 />
