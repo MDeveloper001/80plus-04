@@ -1,15 +1,5 @@
+"use client";
 import Image from "next/image";
-
-/**
- * Reusable ProjectScope Component
- * Props:
- *  - title: string (default: "Scope")
- *  - subtitle: string
- *  - description1: string
- *  - description2: string
- *  - image: imported image
- *  - reverse: boolean (optional: image left, text right)
- */
 
 export function ProjectScope({
   title = "Scope",
