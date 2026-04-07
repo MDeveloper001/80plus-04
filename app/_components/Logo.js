@@ -9,7 +9,7 @@ const Titillium = Titillium_Web({
   display: "swap",
 });
 
-function Logo() {
+export default function Logo() {
   return (
     <Link href="/" className="group flex items-center gap-3 z-10">
       <Image
@@ -28,5 +28,3 @@ function Logo() {
     </Link>
   );
 }
-
-export default Logo;
