@@ -39,3 +39,26 @@
     transform: rotate(1turn);
   }
 }
+
+/* Add this at the top */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Apply globally */
+body {
+  font-family: "Montserrat", sans-serif;
+}
